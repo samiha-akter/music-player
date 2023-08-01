@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>River of Love</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/32a7145487.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="musicPlayer">
+        <nav>
+          <div class="circle" id="backwardIcon">
+            <i class="fa-solid fa-arrow-left-long"></i>
+          </div>
+          <div class="circle" id="bars">
+            <i class="fa-solid fa-bars-staggered"></i>
+          </div>
+        </nav>
+        <img src="images/1.jpg" alt="Zehen by MitRaz" class="songImg" />
+        <h1 id="songName">Zehen</h1>
+        <p>MitRaz</p>
+        <audio id="song">
+          <source src="songs/1.mp3" type="audio/mpeg" />
+        </audio>
+        <input type="range" value="0" id="progress" />
+        <div class="controls">
+          <div id="backwardIcon">
+            <i class="fa-solid fa-backward"></i>
+          </div>
+          <div onclick="playPause()">
+            <i class="fa-solid fa-play" id="ctrlIcon"></i>
+          </div>
+          <div id="forwardIcon">
+            <i class="fa-solid fa-forward"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="sidebar" id="songList">
+        <ul>
+          <li>Zehen</li>
+          <li>Laaya</li>
+          <li>Nadiyon Sa</li>
+        </ul>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
